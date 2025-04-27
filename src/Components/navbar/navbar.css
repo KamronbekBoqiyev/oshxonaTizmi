@@ -1,0 +1,10 @@
+.file{
+    font-size: 40px;
+  text-align: center;
+
+}
+.right{
+    display: flex;
+    justify-content: right;
+    padding: 10px;
+}

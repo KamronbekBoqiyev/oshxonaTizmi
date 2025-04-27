@@ -6,6 +6,7 @@ import Home from "./page/home/Home";
 import Top from "./page/home/top/Top";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import People from "./Components/people/People";
+import Navbar from "./Components/navbar/Navbar";
 
 function App() {
   const [name, setName] = useState();
@@ -30,10 +31,13 @@ function App() {
   const [manzil, setManzil] = useState();
   const [raqami, setRaqami] = useState();
 
+
   return (
     <>
       <BrowserRouter>
+      <Navbar />
         <Routes>
+          
           <Route
             path="home"
             element={
@@ -55,7 +59,7 @@ function App() {
           />
           <Route path="/home/:id" element={<Home />} /> {/* ✅ Dinamik route */}
           <Route path="/" element={<Top manzil={manzil} raqami={raqami} />} />
-          <Route path="/people" element={<People />} />
+          <Route path="/people" element={<People  />} />
         </Routes>
       </BrowserRouter>
     </>

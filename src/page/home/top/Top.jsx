@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Box from "../../../Components/box/Box";
 import { MdAddHome } from "react-icons/md";
 import "./Top.css";
+// import People from "../../../Components/people/People";
+
 
 function Top() {
   const [boxes, setBoxes] = useState([]);
@@ -56,6 +58,7 @@ function Top() {
 
   return (
     <div className="top-container">
+      {/* <People/> */}
       <div className="boxes-container">
         {boxes.map((boxId) => (
           <Box

@@ -10,7 +10,11 @@ function Box({ number, onClick, onRemove, selectedItems }) {
   };
 
   return (
+  
     <div className="box-container" onClick={handleClick}>
+        
+
+
       <div className="box-content">
         <h2>Xona: {number}</h2>
         <button onClick={(e) => { e.stopPropagation(); onRemove(); }}>❌</button>

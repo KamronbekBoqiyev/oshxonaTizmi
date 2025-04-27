@@ -9,7 +9,7 @@ import {
 import { Link } from "react-router-dom";
 import "./people.css";
 
-function People() {
+function People({wan}) {
   const [input, setInput] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
   const [notes, setNotes] = useState(() => {
